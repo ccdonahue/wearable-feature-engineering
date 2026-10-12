@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+development.ipynb
+
+# Local or potentially sensitive data
+data/raw/
+data/processed/
+*.xlsx
+
+# Operating system files
+.DS_Store
+Thumbs.db
