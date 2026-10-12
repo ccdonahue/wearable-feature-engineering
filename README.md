@@ -19,6 +19,14 @@ This repository demonstrates reusable Python functions for deriving features fro
 
 Successive-difference RMSSD describes fluctuations between adjacent observations and is distinct from the physiological HRV measure RMSSD.
 
+## Feature Data Dictionary
+
+A complete data dictionary is available in [`data/feature_data_dictionary.csv`](data/feature_data_dictionary.csv).
+
+The dictionary documents all 45 derived features, including their measurement domains, operational definitions, units, and missing-data handling.
+
+Feature names correspond directly to the output of `build_feature_dataset()`, allowing researchers to interpret the participant-level feature matrix.
+
 ## Repository Structure
 
 ```text

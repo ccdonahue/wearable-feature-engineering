@@ -1,0 +1,46 @@
+feature_name,domain,definition,units,missing_data_handling
+sleep_duration_min_mean,Sleep,Arithmetic mean of valid sleep duration observations.,minutes,Available observations; missing values excluded.
+sleep_duration_min_median,Sleep,Median of valid sleep duration observations.,minutes,Available observations; missing values excluded.
+sleep_duration_min_std,Sleep,Sample standard deviation of sleep duration observations (ddof=1).,minutes,Requires at least two valid observations.
+sleep_duration_min_count,Sleep,Number of nonmissing sleep duration observations.,observations,Missing observations are not counted.
+sleep_efficiency_pct_mean,Sleep,Arithmetic mean of valid sleep efficiency observations.,percent,Available observations; missing values excluded.
+sleep_efficiency_pct_median,Sleep,Median of valid sleep efficiency observations.,percent,Available observations; missing values excluded.
+sleep_efficiency_pct_std,Sleep,Sample standard deviation of sleep efficiency observations (ddof=1).,percent,Requires at least two valid observations.
+sleep_efficiency_pct_count,Sleep,Number of nonmissing sleep efficiency observations.,observations,Missing observations are not counted.
+hrv_rmssd_ms_mean,Physiology,Arithmetic mean of valid nightly hrv (rmssd) observations.,milliseconds,Available observations; missing values excluded.
+hrv_rmssd_ms_median,Physiology,Median of valid nightly hrv (rmssd) observations.,milliseconds,Available observations; missing values excluded.
+hrv_rmssd_ms_std,Physiology,Sample standard deviation of nightly hrv (rmssd) observations (ddof=1).,milliseconds,Requires at least two valid observations.
+hrv_rmssd_ms_count,Physiology,Number of nonmissing nightly hrv (rmssd) observations.,observations,Missing observations are not counted.
+steps_mean,Physical activity,Arithmetic mean of valid daily steps observations.,steps,Available observations; missing values excluded.
+steps_median,Physical activity,Median of valid daily steps observations.,steps,Available observations; missing values excluded.
+steps_std,Physical activity,Sample standard deviation of daily steps observations (ddof=1).,steps,Requires at least two valid observations.
+steps_count,Physical activity,Number of nonmissing daily steps observations.,observations,Missing observations are not counted.
+activity_minutes_mean,Physical activity,Arithmetic mean of valid daily activity duration observations.,minutes,Available observations; missing values excluded.
+activity_minutes_median,Physical activity,Median of valid daily activity duration observations.,minutes,Available observations; missing values excluded.
+activity_minutes_std,Physical activity,Sample standard deviation of daily activity duration observations (ddof=1).,minutes,Requires at least two valid observations.
+activity_minutes_count,Physical activity,Number of nonmissing daily activity duration observations.,observations,Missing observations are not counted.
+sleep_duration_min_slope,Sleep,Ordinary least-squares linear slope of sleep duration against elapsed calendar days.,minutes/day,Requires at least two valid observations on distinct dates.
+hrv_rmssd_ms_slope,Physiology,Ordinary least-squares linear slope of nightly hrv (rmssd) against elapsed calendar days.,milliseconds/day,Requires at least two valid observations on distinct dates.
+steps_slope,Physical activity,Ordinary least-squares linear slope of daily steps against elapsed calendar days.,steps/day,Requires at least two valid observations on distinct dates.
+activity_minutes_slope,Physical activity,Ordinary least-squares linear slope of daily activity duration against elapsed calendar days.,minutes/day,Requires at least two valid observations on distinct dates.
+sleep_duration_min_cv_pct,Sleep,"Sample SD divided by absolute mean sleep duration, multiplied by 100.",percent,Requires at least two valid observations and a nonzero mean.
+sleep_duration_min_successive_rmssd,Sleep,Root mean square of differences between adjacent-day sleep duration observations.,minutes,Only consecutive calendar-day pairs with both values present.
+sleep_duration_min_adjacent_pairs,Sleep,Number of valid adjacent-day pairs for sleep duration.,pairs,Pairs containing missing observations are excluded.
+sleep_efficiency_pct_cv_pct,Sleep,"Sample SD divided by absolute mean sleep efficiency, multiplied by 100.",percent,Requires at least two valid observations and a nonzero mean.
+sleep_efficiency_pct_successive_rmssd,Sleep,Root mean square of differences between adjacent-day sleep efficiency observations.,percent,Only consecutive calendar-day pairs with both values present.
+sleep_efficiency_pct_adjacent_pairs,Sleep,Number of valid adjacent-day pairs for sleep efficiency.,pairs,Pairs containing missing observations are excluded.
+hrv_rmssd_ms_cv_pct,Physiology,"Sample SD divided by absolute mean nightly hrv (rmssd), multiplied by 100.",percent,Requires at least two valid observations and a nonzero mean.
+hrv_rmssd_ms_successive_rmssd,Physiology,Root mean square of differences between adjacent-day nightly hrv (rmssd) observations.,milliseconds,Only consecutive calendar-day pairs with both values present.
+hrv_rmssd_ms_adjacent_pairs,Physiology,Number of valid adjacent-day pairs for nightly hrv (rmssd).,pairs,Pairs containing missing observations are excluded.
+steps_cv_pct,Physical activity,"Sample SD divided by absolute mean daily steps, multiplied by 100.",percent,Requires at least two valid observations and a nonzero mean.
+steps_successive_rmssd,Physical activity,Root mean square of differences between adjacent-day daily steps observations.,steps,Only consecutive calendar-day pairs with both values present.
+steps_adjacent_pairs,Physical activity,Number of valid adjacent-day pairs for daily steps.,pairs,Pairs containing missing observations are excluded.
+activity_minutes_cv_pct,Physical activity,"Sample SD divided by absolute mean daily activity duration, multiplied by 100.",percent,Requires at least two valid observations and a nonzero mean.
+activity_minutes_successive_rmssd,Physical activity,Root mean square of differences between adjacent-day daily activity duration observations.,minutes,Only consecutive calendar-day pairs with both values present.
+activity_minutes_adjacent_pairs,Physical activity,Number of valid adjacent-day pairs for daily activity duration.,pairs,Pairs containing missing observations are excluded.
+bedtime_hour_circular_mean,Sleep timing,Circular mean of bedtime on a 24-hour clock.,decimal hours (0-24),Missing observations excluded; undefined when circular vectors cancel.
+bedtime_hour_circular_sd,Sleep timing,Circular standard deviation of bedtime.,hours,Missing observations excluded; undefined when circular vectors cancel.
+bedtime_hour_count,Sleep timing,Number of valid bedtime observations.,observations,Missing observations excluded.
+wake_hour_circular_mean,Sleep timing,Circular mean of wake time on a 24-hour clock.,decimal hours (0-24),Missing observations excluded; undefined when circular vectors cancel.
+wake_hour_circular_sd,Sleep timing,Circular standard deviation of wake time.,hours,Missing observations excluded; undefined when circular vectors cancel.
+wake_hour_count,Sleep timing,Number of valid wake time observations.,observations,Missing observations excluded.
